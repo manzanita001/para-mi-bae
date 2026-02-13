@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi niña, ¿te gustaría ser mi San Valentín?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Dancing Script', cursive;
+      background-color: #FA8072; /* Rosa salmón */
+      text-align: center;
+    }
+    .contenedor {
+      position: relative;
+      display: inline-block;
+    }
+    .contenedor img {
+      max-width: 100%;
+      height: auto;
+    }
+    .pregunta {
+      position: absolute;
+      top: 30%; /* Ajusta según la posición de la línea en tu imagen */
+      left: 50%;
+      transform: translateX(-50%);
+      color: #d60000;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px #fff;
+    }
+    .buttons {
+      position: absolute;
+      top: 45%; /* Justo debajo de la línea de corazones */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+    .always {
+      background-color: #ffb347;
+      color: white;
+    }
+    .mensaje {
+      position: absolute;
+      top: 40%; /* Aparece debajo de la línea */
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      font-size: 1.5em;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <!-- Imagen exportada de Canva -->
+    <img src="plantilla.png" alt="Diseño San Valentín">
+
+    <!-- Pregunta arriba de la línea -->
+    <div class="pregunta">Mi niña, ¿puedo ser tu san valentin? 💖</div>
+
+    <!-- Botones debajo de la línea -->
+    <div id="pregunta" class="buttons">
+      <button class="yes" onclick="alert('linda respuesta pero no la correcta jiji 😍')">Sí amor</button>
+      <button class="always" onclick="mostrarMensaje()">Siempre lo seré mi vida</button>
+    </div>
+
+    <!-- Mensaje especial -->
+    <div id="mensaje" class="mensaje">
+      💕 Gracias por serlo mi vida hermosa, te amo a ti y a nuestra pichichu. tu y ella son lo mas importante en mi vida, eres lo que mas me importa lo que mas amo, lo que mas anhelo, eres y siempre seras mi baile inolvidable, solo seras tu a quien quiero en mi vida, a quien quiero caminando este camino mas haya de esta y demas vidas, es de tu mano la cual quiero tomar y nunca soltar, por que te amo por que te adoro, siento tanto por que eres tu, tu siendo tu es lo que mas amo, mi niña hermosa dueña de mi ser, provocas mi felicidad y por ello siempre te voy a amar, tu y pichichu son mi mundito, el cual siempre protegere, pues las amo tanto que llego a enloquecer, mi cosita bella gracias por permitirme ser tu san valentin, te amo mi corazoncito            con amor: tu manzanita 💕
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("pregunta").style.display = "none";
+      document.getElementById("mensaje").style.display = "block";
+    }
+  </script>
+</body>
+</html>
